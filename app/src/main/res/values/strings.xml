@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="general_error_message">""</string>
+    <string name="request_error">Too much attempt in 24 hours\nPlease retry later</string>
+    <string name="no_network_message">No Network\nPlease Check your internet connection</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+
+    <string name="search_city_weather">Search City Weather</string>
+
+
+
+</resources>

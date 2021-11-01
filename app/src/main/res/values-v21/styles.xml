@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:textColor">@color/text_dark_color</item>
+        <item name="android:colorAccent">@color/text_dark_color</item>
+        <item name="android:background">@color/primary_layer_color</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButtonStyle</item>
+    </style>
+
+
+</resources>
