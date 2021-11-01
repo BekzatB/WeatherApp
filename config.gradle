@@ -1,0 +1,27 @@
+ext.weatherApiKey = [
+        apikey: getEnvString('WEATHER_API_KEY')
+]
+
+ext.placesApiKey = [
+        apikey: getEnvString('PLACES_API_KEY')
+]
+
+
+// Define how to load a string from a properties file:
+def getStringFromFile(fileName, property) {
+    Properties props = new Properties()
+
+    props.load(project.rootProject.file(fileName).newDataInputStream())
+
+    return props[property].toString()
+}
+
+// Get Env var from system or local file
+def getEnvString(property) {
+    def systemEnv = System.getenv(property)
+    if (systemEnv != null) {
+        return systemEnv.toString()
+    }
+
+    return getStringFromFile('keys.properties', property).toString()
+}

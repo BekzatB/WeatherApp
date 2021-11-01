@@ -12,11 +12,9 @@ import org.koin.core.context.startKoin
 
 class App: Application() {
 
-    private val apiKey = "AIzaSyD7shm2TxjE-csaCgzuoK3r95oIdjckz-o"
-
     override fun onCreate() {
         super.onCreate()
-        Places.initialize(applicationContext, apiKey)
+        Places.initialize(applicationContext, BuildConfig.PLACES_API_KEY)
 
         startKoin {
             androidContext(this@App)

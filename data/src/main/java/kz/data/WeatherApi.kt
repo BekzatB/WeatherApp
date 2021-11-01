@@ -12,7 +12,7 @@ interface WeatherApi {
     suspend fun getCityWeatherData(
         @Query("q") q: String,
         @Query("units") units: String = "metric",
-        @Query("appid") appid: String = "aee152f7fe7a9a219cbdcbb3ba24c279"
+        @Query("appid") appid: String = BuildConfig.WEATHER_API_KEY
     ): NetResult<WeatherDataResponse>
 
 
